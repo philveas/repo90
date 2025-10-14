@@ -1,0 +1,48 @@
+name: Firebase Hosting
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Next app
+        run: npm run build
+
+      - name: Install Firebase CLI
+        run: npm i -g firebase-tools
+
+      # PRs -> create a temporary preview URL
+      - name: Preview deploy (PRs)
+        if: github.event_name == 'pull_request'
+        run: >
+          firebase hosting:channel:deploy pr-${{ github.event.number }}
+          --expires 7d
+          --project veas-website-01-35691
+          --token "${{ secrets.FIREBASE_TOKEN }}"
+
+      # Push to main -> production deploy
+      - name: Production deploy (main)
+        if: github.event_name == 'push'
+        run: >
+          firebase deploy --only hosting
+          --project veas-website-01-35691
+          --token "${{ secrets.FIREBASE_TOKEN }}"
