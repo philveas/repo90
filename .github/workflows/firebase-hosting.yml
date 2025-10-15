@@ -2,9 +2,9 @@ name: Firebase Hosting
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main" ]      # prod deploys
   pull_request:
-    branches: [ "main" ]
+    branches: [ "main" ]      # preview deploys on PRs
   workflow_dispatch:
 
 jobs:
@@ -12,16 +12,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: '20'
           cache: 'npm'
 
-      - name: Install dependencies
+      - name: Install deps
         run: npm ci
 
       - name: Build Next app
@@ -30,7 +28,7 @@ jobs:
       - name: Install Firebase CLI
         run: npm i -g firebase-tools
 
-      # PRs -> create a temporary preview URL
+      # PRs → temporary preview URL
       - name: Preview deploy (PRs)
         if: github.event_name == 'pull_request'
         run: >
@@ -39,7 +37,7 @@ jobs:
           --project veas-website-01-35691
           --token "${{ secrets.FIREBASE_TOKEN }}"
 
-      # Push to main -> production deploy
+      # Push to main → production deploy
       - name: Production deploy (main)
         if: github.event_name == 'push'
         run: >
