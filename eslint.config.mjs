@@ -18,6 +18,7 @@ const eslintConfig = [
       "out/**",
       "build/**",
       "next-env.d.ts",
+      "Prototypes/**", // ✅ Ignore all prototype folders from linting
     ],
   },
 ];
