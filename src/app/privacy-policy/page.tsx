@@ -121,9 +121,14 @@ export default function PrivacyPolicyPage() {
           </p>
 
           <h2>Data Retention</h2>
-          <p>We retain personal data only for as long as necessary to fulfil the purposes it was collected for, including:</p>
+          <p>
+            We retain personal data only for as long as necessary to fulfil the purposes it was collected
+            for, including:
+          </p>
           <ul>
-            <li>Project data: typically retained for up to 6 years for recordkeeping and legal obligations</li>
+            <li>
+              Project data: typically retained for up to 6 years for recordkeeping and legal obligations
+            </li>
             <li>Marketing data: until you withdraw consent</li>
             <li>Website analytics data: typically anonymised after 26 months</li>
           </ul>
@@ -150,11 +155,16 @@ export default function PrivacyPolicyPage() {
           </p>
 
           <h2>Data Security</h2>
-          <p>We implement appropriate technical and organisational measures to protect your personal data, including:</p>
+          <p>
+            We implement appropriate technical and organisational measures to protect your personal data,
+            including:
+          </p>
           <ul>
             <li>Secure cloud-based storage with appropriate security infrastructure</li>
             <li>Access controls and encryption to protect data integrity and confidentiality</li>
-            <li>Regular monitoring and review to detect and prevent unauthorised access or data breaches</li>
+            <li>
+              Regular monitoring and review to detect and prevent unauthorised access or data breaches
+            </li>
           </ul>
           <p>
             In the event of a data breach that may affect your rights or freedoms, we will notify you and
