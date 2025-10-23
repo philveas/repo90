@@ -33,7 +33,7 @@ export default function PrivacyPolicyPage() {
             Our registered office is at:{" "}
             <strong>9 Perseverance Works, Kingsland Road, London, E2 8DD</strong>
             <br />
-            Company number: <strong>16483186</strong>
+            Company Number: <strong>16483186</strong>
           </p>
           <p>
             For any privacy-related queries, please contact us at: Email:
