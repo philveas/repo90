@@ -89,7 +89,7 @@ export default function PrivacyPolicyPage() {
               <strong>Legitimate interests:</strong> To operate and improve our business
             </li>
             <li>
-              <strong>Consent:</strong> Where you’ve agreed to receive communications or share specific
+              <strong>Consent:</strong> Where you&apos;ve agreed to receive communications or share specific
               information
             </li>
             <li>
@@ -141,6 +141,7 @@ export default function PrivacyPolicyPage() {
           <p>
             To exercise any of these rights, please email <strong>info@veasacoustics.com</strong>.
           </p>
+
           <h2>Cookies</h2>
           <p>
             Our website may use cookies to improve performance and user experience. You can control or
