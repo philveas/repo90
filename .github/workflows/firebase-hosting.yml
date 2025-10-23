@@ -40,5 +40,8 @@ jobs:
           workload_identity_provider: "projects/780708298005/locations/global/workloadIdentityPools/github-pool/providers/github-oidc"
           service_account: "github-action-1076248736@veas-website-01-35691.iam.gserviceaccount.com"
 
+      - name: Enable Firebase Web Frameworks support
+        run: firebase experiments:enable webframeworks
+
       - name: Deploy to Firebase Hosting
         run: firebase deploy --only hosting --project veas-website-01-35691
