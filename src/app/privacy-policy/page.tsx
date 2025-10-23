@@ -141,7 +141,6 @@ export default function PrivacyPolicyPage() {
           <p>
             To exercise any of these rights, please email <strong>info@veasacoustics.com</strong>.
           </p>
-
           <h2>Cookies</h2>
           <p>
             Our website may use cookies to improve performance and user experience. You can control or
