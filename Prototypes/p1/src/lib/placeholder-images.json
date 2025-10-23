@@ -1,0 +1,32 @@
+{
+  "placeholderImages": [
+    {
+      "id": "home-hero",
+      "file": "grass2.0.webp",
+      "description": "Noise measurement on grass near road behind trees",
+      "imageHint": "homepage hero",
+      "folder": "home"
+    },
+    {
+      "id": "home-abstract",
+      "file": "yellowperfnoexit.webp",
+      "description": "Abstract acoustic pattern",
+      "imageHint": "homepage feature",
+      "folder": "home"
+    },
+    {
+      "id": "home-meeting",
+      "file": "meeting2.webp",
+      "description": "Two professional consultants having a meeting in an office discussing a project",
+      "imageHint": "homepage feature",
+      "folder": "home"
+    },
+    {
+      "id": "contact-map",
+      "file": "ukgrey.webp",
+      "description": "Map of London around Shoreditch",
+      "imageHint": "map,london,e2 8dd",
+      "folder": "contact"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "placeholderImages": [
+    {
+      "id": "home-hero",
+      "file": "grass2.0.webp",
+      "description": "Noise measurement on grass near road behind trees",
+      "imageHint": "homepage hero",
+      "folder": "home"
+    },
+    {
+      "id": "home-abstract",
+      "description": "Absorptive Acoustic Ceiling",
+      "imageHint": "homepage feature",
+      "folder": "home",
+      "desktop": { "file": "acoustic_ceiling.webp", "width": 597, "height": 448 },
+      "mobile":  { "file": "acoustic_ceiling_mobile.webp", "width": 320, "height": 270 }
+
+    },
+    {
+      "id": "home-meeting",
+      "description": "Two professional consultants having a meeting in an office discussing a project",
+      "imageHint": "homepage feature", 
+      "folder": "home",
+      "desktop": { "file": "meeting2.webp", "width": 597, "height": 448 },
+      "mobile":  { "file": "meeting2_mobile.webp", "width": 320, "height": 270 }
+
+    },
+    {
+      "id": "contact-map",
+      "description": "Map of uk",
+      "imageHint": "map,london,e2 8dd",
+      "folder": "contact",
+      "desktop": { "file": "ukgrey.webp", "width": 1024, "height": 1024 },
+      "mobile":  { "file": "ukmapgrey320wide.webp", "width": 320}
+
+    },
+    {
+      "id": "survey-road",
+      "description": "road traffic noise",
+      "imageHint": "road traffic noise",
+      "folder": "noise-survey",
+      "desktop": { "file": "roadstratford1.webp", "width": 597, "height": 448 },
+      "mobile":  { "file": "roadstratford1mobile.webp", "width": 320, "height": 320 }
+
+    }
+
+
+  ]
+}
